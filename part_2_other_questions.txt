@@ -1,0 +1,3 @@
+2. Based on your understanding of our company, what do you think our biggest challenge is?
+
+I think performance is quite a challenge here since it's a research repository. there must be a great volume of records to search from and to deliver the search results as soon as possible without hogging a ton of resources must be quite a challenge.
