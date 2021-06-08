@@ -1,0 +1,24 @@
+{% extends 'main.html' %}
+
+{% block content %} 
+
+    <table>
+        <tr>
+            <td>Time</td>
+            <td>Temperature</td>
+            <td>Humidity</td>
+            <td>Air Pressure</td>
+            <td>Wind Speed</td>
+        </tr>
+        {% for time_s in weather.properties.timeseries %}
+            <tr>
+                <td>{{ time_s.time }}</td>
+                <td>{{ time_s.data.instant.details.air_temperature }}</td>
+                <td>{{ time_s.data.instant.details.relative_humidity }}</td>
+                <td>{{ time_s.data.instant.details.air_pressure_at_sea_level }}</td>
+                <td>{{ time_s.data.instant.details.wind_speed }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+{% endblock %}
